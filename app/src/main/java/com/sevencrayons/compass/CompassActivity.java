@@ -32,6 +32,7 @@ public class CompassActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compass);
+        Log.d(TAG, "session id: " + java.util.UUID.randomUUID());
 
         compass = new Compass(this);
         compass.arrowView = (ImageView) findViewById(R.id.main_image_hands);
